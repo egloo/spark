@@ -51,7 +51,8 @@ done
 
 NAME="--name ${HADOOP_VERSION}-${BUILD}"
 
-MAKE_ARGS="-Pyarn -P${HADOOP_PROFILE} -Dhadoop.version=${HADOOP_VERSION} -Dscala-${SCALA}"
+# MAKE_ARGS="-Pyarn -P${HADOOP_PROFILE} -Dhadoop.version=${HADOOP_VERSION} -Dscala-${SCALA}"
+MAKE_ARGS="-Pyarn -Phadoop-provided -Dscala-${SCALA}"
 MAKE_ARGS+=" -Phive -Phive-thriftserver -Pspark-ganglia-lgpl"
 MAKE_ARGS+=" -Psparkr -Pnetlib-lgpl"
 
