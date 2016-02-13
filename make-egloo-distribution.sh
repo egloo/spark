@@ -63,4 +63,3 @@ if [ ! -z "$TEST" ]; then
   echo "Running tests..."
   $CMD
 fi
-
