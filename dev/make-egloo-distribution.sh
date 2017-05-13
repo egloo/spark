@@ -24,7 +24,7 @@ set -o pipefail
 set -e
 set -x
 
-SPARK_HOME="$(cd "`dirname "$0"`"; pwd)"
+SPARK_HOME="$(cd "`dirname "$0"`/.."; pwd)"
 MVN="$SPARK_HOME/build/mvn"
 
 # Defaults
