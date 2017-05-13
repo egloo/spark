@@ -56,7 +56,7 @@ MAKE_ARGS="-e -Pyarn -Phadoop-provided -Dscala-${SCALA}"
 MAKE_ARGS+=" -Phive -Phive-thriftserver -Pspark-ganglia-lgpl"
 MAKE_ARGS+=" -Psparkr -Pnetlib-lgpl"
 
-./dev/make-distribution.sh --tgz --with-tachyon $NAME $MAKE_ARGS
+./make-distribution.sh --tgz --with-tachyon $NAME $MAKE_ARGS
 
 if [ ! -z "$TEST" ]; then
   CMD="$MVN $MAKE_ARGS test"
